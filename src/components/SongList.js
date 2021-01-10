@@ -22,7 +22,7 @@ class _SongList extends React.Component {
 }
 
 const mapStateToProps = state => {
-    return { songs: state.songs };
+    return { songs: state.songs, favoriteTitle: state.favoriteTitle };
 };
 
 export const SongList = connect(mapStateToProps)(_SongList);
